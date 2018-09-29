@@ -6,26 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lending</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <style>
+        /* Общие стили */
         body {
             font-size: 18px;
+            line-height: 23px;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        h1,
+        h2 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        /* Стили разделов */
+        header {
+            background-color: #333a42;
+            padding-top: 39px;
+        }
+
+        header h1 {
+            color: #ffffff;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin-right: 34px;
+        }
+
+        header nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="rectangle">
-            <div class="metka"> Александр Хорчев</div>
-            <div class="about">Обо мне</div>
-            <div class="projects">Проекты</div>
-            <div class="reviews">Отзывы</div>
-            <div class="contacts">Контакты</div>
-            <div class="photo"></div>
-            <div class="text"></div>
-        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Александр Хорчев</h1>
+                </div><!-- /.col -->
+                <div class="col">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#about">Обо мне</a>
+                            </li>
+                            <li>
+                                <a href="#projects">Проекты</a>
+                            </li>
+                            <li>
+                                <a href="#reviews">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#contacts">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
     </header>
 </body>
 
