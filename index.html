@@ -26,11 +26,8 @@
         /* Стили разделов */
         header {
             background-color: #333a42;
-            padding-top: 39px;
-        }
-
-        header h1 {
             color: #ffffff;
+            padding-top: 39px;
         }
 
         header nav ul li {
@@ -39,8 +36,25 @@
         }
 
         header nav ul li a {
-            color: #ffffff;
+            color: inherit;
             text-decoration: none;
+        }
+
+        #about {
+            padding-top: 129px;
+            padding-bottom: 80px;
+            color: #ffffff;
+            background-color: #333a42;
+        }
+
+        #about figure img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        #about p {
+            font-size: 24px;
+            line-height: 32px;
         }
     </style>
 </head>
@@ -49,10 +63,10 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-3">
                     <h1>Александр Хорчев</h1>
                 </div><!-- /.col -->
-                <div class="col">
+                <div class="col-8 offset-1">
                     <nav>
                         <ul>
                             <li>
@@ -73,6 +87,28 @@
             </div><!-- /.row -->
         </div><!-- /.container -->
     </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <figure>
+                        <img src="img/about/photo.jpg" alt="Александр Хорчев &mdash; веб-разработчик">
+                    </figure>
+                </div>
+                <div class="col-8 offset-1">
+                    <p>
+                        Доброго времени суток, меня зовут Александр. Занимаюсь разработкой сайтов с нуля, под ключ.
+                        Специалист по CMS WordPress, OpenCart, Elgg. Выполняю верстку и программирование сайтов. Делаю
+                        верстку на Bootstrap, таким образом Ваш сайт будет отлично выглядеть на всех устройствах.
+                    </p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#about -->
 </body>
 
 </html>
