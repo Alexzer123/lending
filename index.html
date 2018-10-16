@@ -86,7 +86,7 @@
         #reviews .wrapper {
             border-top: 1px solid #a6a5a1;
             padding-top: 21px;
-            padding-bottom: 127px;
+            padding-bottom: 96px;
         }
 
         #reviews .wrapper h2 {
@@ -102,6 +102,68 @@
             font-weight: 700;
             line-height: 32px;
             margin-bottom: 8px;
+        }
+
+        #contacts .wrapper {
+            border-top: 1px solid #a6a5a1;
+            padding-top: 37px;
+            padding-bottom: 127px;
+        }
+
+        #contacts .wrapper h2 {
+            margin-bottom: 32px;
+        }
+
+        #contacts .wrapper h3 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 22px;
+        }
+
+        #contacts .wrapper h3 a {
+            color: #d7443e;
+            text-decoration: none;
+        }
+
+        #contacts .wrapper figure {
+            margin-top: 57px;
+        }
+        
+        #contacts .wrapper figure img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+        
+        #contacts .wrapper form input {
+            border: 1px solid #333a42;
+            margin-top: 10px;
+            margin-bottom: 13px;
+            width: 100%;
+            height: 32px;
+        }
+
+        #contacts .wrapper form textarea {
+            border: 1px solid #333a42;
+            margin-top: 10px;
+            padding: 5px;
+            width: 100%;
+            height: 144px;
+            resize: none;
+        }
+
+        #contacts .wrapper form button {
+            margin-top: 32px;
+            width: 140px;
+            height: 32px;
+            color: #ffffff;
+            background-color: #333a42;
+        }
+
+        footer {
+            height: 52px;
+            background-color: #333a42;
         }
     </style>
 </head>
@@ -226,6 +288,61 @@
         </div><!-- container -->
     </section><!-- /#reviews -->
 
+    <section id="contacts">
+        <div class="container">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-6">
+                        <h2>Контакты</h2>
+                        <h3>
+                            <p>
+                                Я сейчас нахожуся в в Тайланде.
+                                <br>
+                                У меня сейчас 22:04. Здесь все кто по кайфу, ингуши, кабардинцы.
+                                <br><br>
+                                Быстрее всего отвечу <a href="mailto:">по почте</a>.
+                            </p>
+                        </h3>
+                        <div class="row">
+                            <div class="col-2">
+                                <figure>
+                                    <a href="https://vk.com/ahorchev"><img src="img/contacts/vk.jpg" alt="ВКонтакте"></a>
+                                </figure>
+                            </div>
+                            <div class="col-2">
+                                <figure>
+                                    <a href="https://www.facebook.com/profile.php?id=100014505130151"><img src="img/contacts/facebook.jpg"
+                                            alt="Facebook"></a>
+                                </figure>
+                            </div>
+                            <div class="col-2">
+                                <figure>
+                                    <a href=""><img src="img/contacts/odnoklassniki.jpg" alt="Одноклассники"></a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div><!-- /.col-6 -->
+                    <div class="col-6">
+                        <h3>Обратная связь</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>Имя<br> <input type="text" name="name" id=""></p>
+                                </div>
+                                <div class="col-6">
+                                    <p>Почта<br> <input type="text" name="email" id=""></p>
+                                </div>
+                            </div>
+                            <p>Сообщение<br> <textarea name="message" id=""></textarea></p>
+                            <button type="submit">Отправить</button>
+                        </form><!-- form -->
+                    </div><!-- /.col-6 -->
+                </div><!-- /.row -->
+            </div><!-- wrapper -->
+        </div><!-- /.container -->
+    </section><!-- /.contacts -->
+
+    <footer></footer>
 </body>
 
 </html>
