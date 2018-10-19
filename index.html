@@ -9,163 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <style>
-        /* Общие стили */
-        body {
-            font-size: 18px;
-            line-height: 23px;
-            font-family: 'IBM Plex Sans', sans-serif;
-            background-color: #f1ece9;
-        }
-
-        h1,
-        h2 {
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 500;
-        }
-
-        /* Стили разделов */
-        header {
-            background-color: #333a42;
-            color: #ffffff;
-            padding-top: 39px;
-        }
-
-        header nav ul li {
-            display: inline-block;
-            margin-right: 34px;
-        }
-
-        header nav ul li a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        #about {
-            padding-top: 129px;
-            padding-bottom: 80px;
-            color: #ffffff;
-            background-color: #333a42;
-        }
-
-        #about figure img {
-            width: 100%;
-            border-radius: 50%;
-        }
-
-        #about p {
-            font-size: 24px;
-            line-height: 32px;
-        }
-
-        #projects {
-            padding-top: 39px;
-            padding-bottom: 42px;
-        }
-
-        #projects figure img {
-            width: 100%;
-            margin-bottom: 6px;
-        }
-
-        #projects figure figcaption h3 {
-            font-size: 24px;
-            line-height: 32px;
-        }
-
-        #projects figure figcaption .counter {
-            line-height: 32px;
-            text-align: right;
-        }
-
-        #projects figure figcaption .meta {
-            margin-top: 7px;
-        }
-
-        #reviews .wrapper {
-            border-top: 1px solid #a6a5a1;
-            padding-top: 21px;
-            padding-bottom: 96px;
-        }
-
-        #reviews .wrapper h2 {
-            margin-bottom: 57px;
-        }
-
-        #reviews .wrapper img {
-            width: 100%;
-            border-radius: 50%;
-        }
-
-        #reviews .wrapper h3 {
-            font-weight: 700;
-            line-height: 32px;
-            margin-bottom: 8px;
-        }
-
-        #contacts .wrapper {
-            border-top: 1px solid #a6a5a1;
-            padding-top: 37px;
-            padding-bottom: 127px;
-        }
-
-        #contacts .wrapper h2 {
-            margin-bottom: 32px;
-        }
-
-        #contacts .wrapper h3 {
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 32px;
-            margin-bottom: 22px;
-        }
-
-        #contacts .wrapper h3 a {
-            color: #d7443e;
-            text-decoration: none;
-        }
-
-        #contacts .wrapper figure {
-            margin-top: 57px;
-        }
-        
-        #contacts .wrapper figure img {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-        }
-        
-        #contacts .wrapper form input {
-            border: 1px solid #333a42;
-            margin-top: 10px;
-            margin-bottom: 13px;
-            width: 100%;
-            height: 32px;
-        }
-
-        #contacts .wrapper form textarea {
-            border: 1px solid #333a42;
-            margin-top: 10px;
-            padding: 5px;
-            width: 100%;
-            height: 144px;
-            resize: none;
-        }
-
-        #contacts .wrapper form button {
-            margin-top: 32px;
-            width: 140px;
-            height: 32px;
-            color: #ffffff;
-            background-color: #333a42;
-        }
-
-        footer {
-            height: 52px;
-            background-color: #333a42;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -294,55 +138,67 @@
                 <div class="row">
                     <div class="col-6">
                         <h2>Контакты</h2>
-                        <h3>
+
+                        <div class="contacts">
                             <p>
-                                Я сейчас нахожуся в в Тайланде.
-                                <br>
-                                У меня сейчас 22:04. Здесь все кто по кайфу, ингуши, кабардинцы.
-                                <br><br>
+                                Я сейчас нахожуся в в Тайланде. У меня сейчас 22:04. Здесь все кто по кайфу, ингуши,
+                                кабардинцы.
+                            </p>
+                            <p>
                                 Быстрее всего отвечу <a href="mailto:">по почте</a>.
                             </p>
-                        </h3>
-                        <div class="row">
-                            <div class="col-2">
-                                <figure>
-                                    <a href="https://vk.com/ahorchev"><img src="img/contacts/vk.jpg" alt="ВКонтакте"></a>
-                                </figure>
-                            </div>
-                            <div class="col-2">
-                                <figure>
-                                    <a href="https://www.facebook.com/profile.php?id=100014505130151"><img src="img/contacts/facebook.jpg"
-                                            alt="Facebook"></a>
-                                </figure>
-                            </div>
-                            <div class="col-2">
-                                <figure>
-                                    <a href=""><img src="img/contacts/odnoklassniki.jpg" alt="Одноклассники"></a>
-                                </figure>
-                            </div>
-                        </div>
+
+                            <ul class="links">
+                                <li>
+                                    <a href="https://vk.com/ahorchev" title="Профиль ВКонтакте">
+                                        <img src="img/contacts/vk.svg" alt="Александр Хорчев">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=100014505130151" title="Профиль Facebook">
+                                        <img src="img/contacts/fb.svg" alt="Александр Хорчев">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/Alexzer123" title="Профиль GitHub">
+                                        <img src="img/contacts/gh.svg" alt="Александр Хорчев">
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div><!-- /.contacts -->
                     </div><!-- /.col-6 -->
+
                     <div class="col-6">
-                        <h3>Обратная связь</h3>
-                        <form>
-                            <div class="row">
-                                <div class="col-6">
-                                    <p>Имя<br> <input type="text" name="name" id=""></p>
+                        <div class="feedback">
+                            <h2>Обратная связь</h2>
+                            <form>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="name">Имя</label>
+                                        <input name="name" id="name" maxlength="255" required>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="email">Почта</label>
+                                        <input type="email" name="email" id="email" required>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                    <p>Почта<br> <input type="text" name="email" id=""></p>
-                                </div>
-                            </div>
-                            <p>Сообщение<br> <textarea name="message" id=""></textarea></p>
-                            <button type="submit">Отправить</button>
-                        </form><!-- form -->
+                                <label for="message">Сообщение</label>
+                                <textarea name="message" id="message" rows="10" required></textarea>
+                                <button type="submit">Отправить форму</button>
+                            </form>
+                        </div>
+
                     </div><!-- /.col-6 -->
                 </div><!-- /.row -->
+
             </div><!-- wrapper -->
         </div><!-- /.container -->
     </section><!-- /.contacts -->
 
-    <footer></footer>
+    <footer>
+        Александр Хорчев &copy; 2018
+    </footer>
 </body>
 
 </html>
