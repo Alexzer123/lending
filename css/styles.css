@@ -118,33 +118,33 @@ header nav ul li a {
 #contacts .wrapper .contacts ul li {
     display: inline-block;
     margin-right: 48px;
-} 
+}
 
-#contacts .wrapper .feedback form label{
+#contacts .wrapper .feedback form label {
     display: block;
     line-height: 32px;
     margin-bottom: 3px;
 }
 
 #contacts .wrapper .feedback form input,
-#contacts .wrapper .feedback form textarea
-{
+#contacts .wrapper .feedback form textarea {
     width: 100%;
     font-size: inherit;
     padding: 0 7px 0 7px;
 }
+
 #contacts .wrapper .feedback form input {
     height: 32px;
     margin-bottom: 13px;
-    
+
 }
-#contacts .wrapper .feedback form textarea
-{
+
+#contacts .wrapper .feedback form textarea {
     resize: none;
     margin-bottom: 32px;
 }
-#contacts .wrapper .feedback form button
-{
+
+#contacts .wrapper .feedback form button {
     color: #ffffff;
     background-color: #333a42;
     border: 1px solid #333a42;
