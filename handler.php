@@ -15,12 +15,28 @@ $message = "Имя: {$name}, email-адрес: {$email}, сообщение: {$t
 
 //результат отправки сохранили в переменную
 $result = mail($to, $subject, $message);
+?>
 
-//выводим сообщение в зависимости от результата
-if($result){
-    echo "Спасибо, ваше сообщение отправлено. Я отвечу вам в ближайщее время. <a href='{$backUrl}'>Назад</a>";
-} else {
-    echo "Ошибка отправки сообщеня. Пожалуйста, свяжитесь со мной по email. <a href='{$backUrl}'>Назад</a>";
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Результат отправки сообщения</title>
+</head>
+<body>
+    
+    <?php if($result): ?>
+
+        <p>Спасибо, ваше сообщение отправлено. Я отвечу вам в ближайщее время. <a href="<?php $backUrl; ?>">Вернуться на сайт</a></p>
+    <?php else: ?>
+    
+        <p>Ошибка отправки сообщеня. Пожалуйста, свяжитесь со мной по email. <a href="<?php $backUrl; ?>">Вернуться на сайт</a></p>
+    <?php endif; ?>
+
+
+</body>
+</html>
 
 
