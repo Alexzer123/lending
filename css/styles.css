@@ -103,7 +103,7 @@ header nav ul li a {
     margin-bottom: 32px;
 }
 
-#contacts .wrapper p {
+#contacts .wrapper .contacts p {
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -151,6 +151,18 @@ header nav ul li a {
     height: 32px;
     font-size: inherit;
     padding: 0 25px 0 25px;
+}
+
+#contacts .wrapper .feedback .submit {
+    margin-top: 15px;
+}
+
+#contacts .wrapper .feedback .submit-success {
+    color: green;
+}
+
+#contacts .wrapper .feedback .submit-error {
+    color: red;
 }
 
 footer {

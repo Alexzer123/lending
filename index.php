@@ -1,3 +1,31 @@
+<?php 
+
+$currentUrl = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+
+$submit = false;
+$result = false;
+
+if(count($_POST) > 0){
+    $submit = true;
+
+    //получаем данные формы
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $text = $_POST['text'] ;
+
+    //настройка переадресайии
+    $backUrl = $_SERVER['HTTP_REFERER']; //взял адрес страницы отправки формы из служебного массива $_SERVER;
+
+    //настройки отрпавки
+    $to = 'aleksandr1995g@yandex.ru';
+    $subject = 'Сообщение с сайта';
+    $message = "Имя: {$name}, email-адрес: {$email}, сообщение: {$text}.";
+
+    //результат отправки сохранили в переменную
+    $result = mail($to, $subject, $message);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -172,7 +200,7 @@
                     <div class="col-6">
                         <div class="feedback">
                             <h2>Обратная связь</h2>
-                            <form method="POST" action="handler.php">
+                            <form method="POST" action="<?php echo $currentUrl ?>#contacts">
                                 <div class="row">
                                     <div class="col-6">
                                         <label for="name">Имя</label>
@@ -187,6 +215,12 @@
                                 <textarea name="text" id="text" rows="10" required></textarea>
                                 <button type="submit">Отправить форму</button>
                             </form>
+                            <?php if($submit && $result): ?>
+                                <div class="submit submit-success">Спасибо, ваше сообщение отправлено. Я отвечу вам в ближайщее время.</div>
+                            <?php endif; ?>
+                            <?php if($submit && !$result): ?>
+                                <div class="submit submit-error">Ошибка отправки сообщеня. Пожалуйста, свяжитесь со мной по email.</div>
+                            <?php endif; ?>
                         </div>
 
                     </div><!-- /.col-6 -->
