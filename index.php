@@ -37,7 +37,10 @@ if(count($_POST) > 0){
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 
 <body>
@@ -95,22 +98,24 @@ if(count($_POST) > 0){
                     <h2>Проекты</h2>
                 </div>
                 <div class="col-8">
-                    <figure>
-                        <img src="img/projects/Chat.jpg" alt="Программа виртуального общения по локальной сети">
-                        <figcaption>
-                            <div class="row">
-                                <div class="col-9">
-                                    <h3>Программа виртуального общения по локальной сети</h3>
+                <div class="projects-slider">
+                        <figure>
+                            <img src="img/projects/Chat.jpg" alt="Программа виртуального общения по локальной сети">
+                            <figcaption>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h3>Программа виртуального общения по локальной сети</h3>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="counter">1/10</div>
+                                    </div>
+                                </div><!-- /.row -->
+                                <div class="meta">
+                                    2018 &#183; Программирование &#183; C#
                                 </div>
-                                <div class="col-3">
-                                    <div class="counter">1/10</div>
-                                </div>
-                            </div><!-- /.row -->
-                            <div class="meta">
-                                2018 &#183; Программирование &#183; C#
-                            </div>
-                        </figcaption>
-                    </figure>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div><!-- /.row -->
         </div><!-- /.conatiner -->
@@ -233,6 +238,11 @@ if(count($_POST) > 0){
     <footer>
         Александр Хорчев &copy; 2018
     </footer>
+
+    
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 
 </html>
