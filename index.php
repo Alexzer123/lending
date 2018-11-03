@@ -1,11 +1,11 @@
-<?php 
+<?php
 
 $currentUrl = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
 
 $submit = false;
 $result = false;
 
-if(count($_POST) > 0){
+if (count($_POST) > 0) {
     $submit = true;
 
     //получаем данные формы
@@ -37,10 +37,10 @@ if(count($_POST) > 0){
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/styles.css">
-    
+
 </head>
 
 <body>
@@ -98,7 +98,8 @@ if(count($_POST) > 0){
                     <h2>Проекты</h2>
                 </div>
                 <div class="col-8">
-                <div class="projects-slider">
+                    <div class="projects-slider">
+
                         <figure>
                             <img src="img/projects/Chat.jpg" alt="Программа виртуального общения по локальной сети">
                             <figcaption>
@@ -115,7 +116,27 @@ if(count($_POST) > 0){
                                 </div>
                             </figcaption>
                         </figure>
-                    </div>
+
+                        <figure>
+                            <img src="img/projects/Game.jpg" alt="Браузерная игра Арканоид">
+                            <figcaption>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h3>Браузерная игра Арканоид</h3>
+                                    </div><!-- /.col-9 -->
+                                    <div class="col-3">
+                                        <div class="counter">2/10</div>
+                                        <!-- /.counter -->
+                                    </div><!-- /.col-3 -->
+                                </div><!-- /.row -->
+                                <div class="meta">
+                                    2018 &#183; Программирование &#183; HTML, CSS, JavaScript
+                                </div>
+                                <!-- /.meta -->
+                            </figcaption>
+                        </figure>
+
+                    </div><!-- /.projects-slider -->
                 </div>
             </div><!-- /.row -->
         </div><!-- /.conatiner -->
@@ -125,42 +146,75 @@ if(count($_POST) > 0){
         <div class="container">
             <div class="wrapper">
                 <h2>Отзывы</h2>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="col-4">
-                                <figure>
-                                    <img src="img/reviews/1.jpg" alt="Максим, Санкт-Петербург">
-                                </figure>
-                            </div>
-                            <div class="col-8">
-                                <h3>Максим, Санкт-Петербург</h3>
-                                <p>Mollit cillum sit eu excepteur commodo culpa in esse sit magna esse non et commodo.
-                                    Ut reprehenderit cillum proident excepteur id occaecat reprehenderit cupidatat. Ad
-                                    consequat aliquip labore qui. Proident aliquip ipsum ullamco sint est et. Elit
-                                    eiusmod fugiat mollit mollit fugiat non duis. Eiusmod laborum officia exercitation
-                                    id irure ex cupidatat tempor aliquip nulla et eu aute.</p>
-                            </div>
+
+                <div class="reviews-slider">
+
+                    <div class="row">
+                        <div class="col-4">
+                            <figure>
+                                <img src="img/reviews/1.jpg" alt="Максим, Санкт-Петербург">
+                            </figure>
                         </div>
-                    </div><!-- col-6 -->
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="col-4">
-                                <figure>
-                                    <img src="img/reviews/2.jpg" alt="Глебан, Душанбе">
-                                </figure>
-                            </div>
-                            <div class="col-8">
-                                <h3>Глебан, Душанбе</h3>
-                                <p>Aliquip esse dolore ullamco laborum dolor ex aliquip velit. Fugiat ut cupidatat ut
-                                    fugiat in sit officia minim laboris dolore. Cupidatat est Lorem ea qui anim
-                                    occaecat
-                                    veniam consequat laborum Lorem sunt anim nisi ullamco. Nulla consectetur sint
-                                    reprehenderit sint eiusmod dolor aliqua deserunt.</p>
-                            </div>
+                        <div class="col-8">
+                            <h3>Максим, Санкт-Петербург</h3>
+                            <p>Mollit cillum sit eu excepteur commodo culpa in esse sit magna esse non et commodo.
+                                Ut reprehenderit cillum proident excepteur id occaecat reprehenderit cupidatat. Ad
+                                consequat aliquip labore qui. Proident aliquip ipsum ullamco sint est et. Elit
+                                eiusmod fugiat mollit mollit fugiat non duis. Eiusmod laborum officia exercitation
+                                id irure ex cupidatat tempor aliquip nulla et eu aute.</p>
                         </div>
-                    </div><!-- col-6 -->
-                </div><!-- row -->
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <figure>
+                                <img src="img/reviews/2.jpg" alt="Глебан, Душанбе">
+                            </figure>
+                        </div>
+                        <div class="col-8">
+                            <h3>Глебан, Душанбе</h3>
+                            <p>Aliquip esse dolore ullamco laborum dolor ex aliquip velit. Fugiat ut cupidatat ut
+                                fugiat in sit officia minim laboris dolore. Cupidatat est Lorem ea qui anim
+                                occaecat
+                                veniam consequat laborum Lorem sunt anim nisi ullamco. Nulla consectetur sint
+                                reprehenderit sint eiusmod dolor aliqua deserunt.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <figure>
+                                <img src="img/reviews/3.jpg" alt="Блейз Шарп, Карибы">
+                            </figure>
+                        </div>
+                        <div class="col-8">
+                            <h3>Блейз Шарп, Карибы</h3>
+                            <p>Aliquip esse dolore ullamco laborum dolor ex aliquip velit. Fugiat ut cupidatat ut
+                                fugiat in sit officia minim laboris dolore. Cupidatat est Lorem ea qui anim
+                                occaecat
+                                veniam consequat laborum Lorem sunt anim nisi ullamco. Nulla consectetur sint
+                                reprehenderit sint eiusmod dolor aliqua deserunt.</p>
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-4">
+                            <figure>
+                                <img src="img/reviews/3.jpg" alt="Блейз Шарп, Карибы">
+                            </figure>
+                        </div>
+                        <div class="col-8">
+                            <h3>Блейз Шарп, Карибы</h3>
+                            <p>Aliquip esse dolore ullamco laborum dolor ex aliquip velit. Fugiat ut cupidatat ut
+                                fugiat in sit officia minim laboris dolore. Cupidatat est Lorem ea qui anim
+                                occaecat
+                                veniam consequat laborum Lorem sunt anim nisi ullamco. Nulla consectetur sint
+                                reprehenderit sint eiusmod dolor aliqua deserunt.</p>
+                        </div>
+                    </div><!-- /.row -->
+
+                </div><!-- /.reviews-slider -->
+
             </div><!-- wrapper -->
         </div><!-- container -->
     </section><!-- /#reviews -->
@@ -220,11 +274,13 @@ if(count($_POST) > 0){
                                 <textarea name="text" id="text" rows="10" required></textarea>
                                 <button type="submit">Отправить форму</button>
                             </form>
-                            <?php if($submit && $result): ?>
-                                <div class="submit submit-success">Спасибо, ваше сообщение отправлено. Я отвечу вам в ближайщее время.</div>
+                            <?php if ($submit && $result): ?>
+                            <div class="submit submit-success">Спасибо, ваше сообщение отправлено. Я отвечу вам в
+                                ближайщее время.</div>
                             <?php endif; ?>
-                            <?php if($submit && !$result): ?>
-                                <div class="submit submit-error">Ошибка отправки сообщеня. Пожалуйста, свяжитесь со мной по email.</div>
+                            <?php if ($submit && !$result): ?>
+                            <div class="submit submit-error">Ошибка отправки сообщеня. Пожалуйста, свяжитесь со мной по
+                                email.</div>
                             <?php endif; ?>
                         </div>
 
@@ -239,10 +295,29 @@ if(count($_POST) > 0){
         Александр Хорчев &copy; 2018
     </footer>
 
-    
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('.projects-slider').slick({
+                autoplay: true,
+                dots: true
+            });
+
+            $('.reviews-slider').slick({
+                slidesPerRow: 2,
+                slidesToShow: 2,
+                arrows: false,
+                dots: true,
+            });
+
+        });
+    </script>
+
 </body>
 
 </html>
