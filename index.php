@@ -315,6 +315,27 @@ if (count($_POST) > 0) {
                 dots: true,
             });
 
+
+            //TODO: доделать
+            $(".feedback form").on('submit', function(event) {
+
+                event.preventDefault();
+
+                //2 получаем данные введеные в форму
+                let data = {
+                    name: "wwww",
+                    email: "asdasd",
+                    text: "asdasdasd"
+                }
+                console.log(data);
+
+
+                //3 Отправляем данные на сервер
+            });
+
+            //обратите внимание на то что в теле обработчика мы вырубаем штатный обработчик события submit (который гавесил сам браузер по дефолты)
+
+
         });
     </script>
 
