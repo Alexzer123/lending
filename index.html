@@ -1,31 +1,3 @@
-<?php
-
-$currentUrl = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
-
-$submit = false;
-$result = false;
-
-if (count($_POST) > 0) {
-    $submit = true;
-
-    //получаем данные формы
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $text = $_POST['text'] ;
-
-    //настройка переадресайии
-    $backUrl = $_SERVER['HTTP_REFERER']; //взял адрес страницы отправки формы из служебного массива $_SERVER;
-
-    //настройки отрпавки
-    $to = 'aleksandr1995g@yandex.ru';
-    $subject = 'Сообщение с сайта';
-    $message = "Имя: {$name}, email-адрес: {$email}, сообщение: {$text}.";
-
-    //результат отправки сохранили в переменную
-    $result = mail($to, $subject, $message);
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -259,7 +231,7 @@ if (count($_POST) > 0) {
                     <div class="col-6">
                         <div class="feedback">
                             <h2>Обратная связь</h2>
-                            <form method="POST" action="<?php echo $currentUrl ?>#contacts">
+                            <form method="POST" action="server.php">
                                 <div class="row">
                                     <div class="col-6">
                                         <label for="name">Имя</label>
@@ -274,14 +246,15 @@ if (count($_POST) > 0) {
                                 <textarea name="text" id="text" rows="10" required></textarea>
                                 <button type="submit">Отправить форму</button>
                             </form>
-                            <?php if ($submit && $result): ?>
-                            <div class="submit submit-success">Спасибо, ваше сообщение отправлено. Я отвечу вам в
+
+                            <div class="submit submit-success" style="display: none;">Спасибо, ваше сообщение
+                                отправлено. Я отвечу вам в
                                 ближайщее время.</div>
-                            <?php endif; ?>
-                            <?php if ($submit && !$result): ?>
-                            <div class="submit submit-error">Ошибка отправки сообщеня. Пожалуйста, свяжитесь со мной по
+
+                            <div class="submit submit-error" style="display: none;">Ошибка отправки сообщеня.
+                                Пожалуйста, свяжитесь со мной по
                                 email.</div>
-                            <?php endif; ?>
+
                         </div>
 
                     </div><!-- /.col-6 -->
@@ -301,7 +274,7 @@ if (count($_POST) > 0) {
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
 
             $('.projects-slider').slick({
                 autoplay: true,
@@ -317,20 +290,30 @@ if (count($_POST) > 0) {
 
 
             //TODO: доделать
-            $(".feedback form").on('submit', function(event) {
+            $(".feedback form").on('submit', function (event) {
 
                 event.preventDefault();
 
                 //2 получаем данные введеные в форму
                 let data = {
-                    name: "wwww",
-                    email: "asdasd",
-                    text: "asdasdasd"
+                    name: $("#name").val(),
+                    email: $("#email").val(),
+                    text: $("#text").val()
                 }
-                console.log(data);
 
+                //отправка данных на сервер и обработка результат
+                $.post('server.php', data, function (response) {
+                    if (response.result) {
+                        console.log("Succes send");
+                        //TODO ПОКАЗАТЬ СООБЩЕНИЕ  О УСПЕХЕ
+                        //И СКРЫТЬ ЧЕРЕЗ 10 СЕКУНД
+                    } else {
+                        console.log("Error send");
+                        //TODO ПОКАЗАТЬ СООБЩЕНИЕ ОБ ОШИБКЕ
+                        //И СКРЫТЬ ЧЕРЕЗ 10 СЕКУНД
+                    }
+                }, 'json');
 
-                //3 Отправляем данные на сервер
             });
 
             //обратите внимание на то что в теле обработчика мы вырубаем штатный обработчик события submit (который гавесил сам браузер по дефолты)
