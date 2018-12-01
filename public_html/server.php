@@ -15,8 +15,8 @@ if (count($_POST) > 0) {
     $message = "Имя: {$name}, email-адрес: {$email}, сообщение: {$text}.";
 
     //результат отправки сохранили в переменную
-    // $result = mail($to, $subject, $message);
-    $result = true;
+    $result = mail($to, $subject, $message);
+    // $result = true;
 }
 //возвращаем ответ сервера
 header('Content-type: application/json');

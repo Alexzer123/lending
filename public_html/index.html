@@ -244,16 +244,14 @@
                                 </div>
                                 <label for="text">Сообщение</label>
                                 <textarea name="text" id="text" rows="10" required></textarea>
-                                <button type="submit">Отправить форму</button>
+                                <button type="submit" class="submit">Отправить форму</button>
                             </form>
 
                             <div class="submit submit-success" style="display: none;">Спасибо, ваше сообщение
-                                отправлено. Я отвечу вам в
-                                ближайщее время.</div>
+                                отправлено. Я отвечу вам в ближайщее время.</div>
 
                             <div class="submit submit-error" style="display: none;">Ошибка отправки сообщеня.
-                                Пожалуйста, свяжитесь со мной по
-                                email.</div>
+                                Пожалуйста, свяжитесь со мной по email.</div>
 
                         </div>
 
@@ -269,29 +267,35 @@
     </footer>
 
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
 
+            //слайдеры
             $('.projects-slider').slick({
                 autoplay: true,
                 dots: true
             });
-
             $('.reviews-slider').slick({
                 slidesPerRow: 2,
                 slidesToShow: 2,
                 arrows: false,
                 dots: true,
             });
+            
+            //показ сообщения об успехе/ошибки
+            function displayResult(selector) {
+                $(selector).show('slow');
+                setTimeout(function () {
+                    $(selector).hide('slow');
+                }, 10000);
+            }
 
-
-            //TODO: доделать
+            //отправка формы
             $(".feedback form").on('submit', function (event) {
-
+                //обратите внимание на то что в теле обработчика мы вырубаем штатный обработчик события submit (который гавесил сам браузер по дефолты)
                 event.preventDefault();
 
                 //2 получаем данные введеные в форму
@@ -301,22 +305,22 @@
                     text: $("#text").val()
                 }
 
-                //отправка данных на сервер и обработка результат
+                $(".submit").prop("disabled", true);
+
+                //отправка данных на сервер и обработка результата
                 $.post('server.php', data, function (response) {
                     if (response.result) {
-                        console.log("Succes send");
-                        //TODO ПОКАЗАТЬ СООБЩЕНИЕ  О УСПЕХЕ
-                        //И СКРЫТЬ ЧЕРЕЗ 10 СЕКУНД
+                        // console.log("success");
+                            displayResult(".submit.submit-success");
                     } else {
-                        console.log("Error send");
-                        //TODO ПОКАЗАТЬ СООБЩЕНИЕ ОБ ОШИБКЕ
-                        //И СКРЫТЬ ЧЕРЕЗ 10 СЕКУНД
+                        // console.log("error")
+                        displayResult(".submit.submit-error");
                     }
+                    
+                    $(".submit").prop("disabled", false);
                 }, 'json');
 
             });
-
-            //обратите внимание на то что в теле обработчика мы вырубаем штатный обработчик события submit (который гавесил сам браузер по дефолты)
 
 
         });
