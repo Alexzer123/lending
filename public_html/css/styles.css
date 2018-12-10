@@ -157,6 +157,10 @@ header nav ul li a {
     margin-top: 15px;
 }
 
+#contacts .wrapper .feedback .submit:disabled {
+    background-color: #B22222;
+}
+
 #contacts .wrapper .feedback .submit-success {
     color: green;
 }

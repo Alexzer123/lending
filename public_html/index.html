@@ -284,13 +284,13 @@
                 arrows: false,
                 dots: true,
             });
-            
+
             //показ сообщения об успехе/ошибки
-            function displayResult(selector) {
+            function displayResult(selector, time) {
                 $(selector).show('slow');
                 setTimeout(function () {
                     $(selector).hide('slow');
-                }, 10000);
+                }, time);
             }
 
             //отправка формы
@@ -311,18 +311,16 @@
                 $.post('server.php', data, function (response) {
                     if (response.result) {
                         // console.log("success");
-                            displayResult(".submit.submit-success");
+                        displayResult(".submit.submit-success", 10000);
                     } else {
                         // console.log("error")
-                        displayResult(".submit.submit-error");
+                        displayResult(".submit.submit-error", 10000);
                     }
-                    
+
                     $(".submit").prop("disabled", false);
                 }, 'json');
 
             });
-
-
         });
     </script>
 
