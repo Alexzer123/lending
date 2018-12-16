@@ -1,177 +1,178 @@
+@charset "UTF-8";
 /* Общие стили */
 body {
-    font-size: 18px;
-    line-height: 23px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    background-color: #f1ece9;
+  font-size: 18px;
+  line-height: 23px;
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #f1ece9;
 }
 
 h1,
 h2 {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
 }
 
 /* Стили разделов */
 header {
-    background-color: #333a42;
-    color: #ffffff;
-    padding-top: 39px;
+  background-color: #333a42;
+  color: #ffffff;
+  padding-top: 39px;
 }
 
 header nav ul li {
-    display: inline-block;
-    margin-right: 34px;
+  display: inline-block;
+  margin-right: 34px;
 }
 
 header nav ul li a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 #about {
-    padding-top: 129px;
-    padding-bottom: 80px;
-    color: #ffffff;
-    background-color: #333a42;
+  padding-top: 129px;
+  padding-bottom: 80px;
+  color: #ffffff;
+  background-color: #333a42;
 }
 
 #about figure img {
-    width: 100%;
-    border-radius: 50%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 #about p {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 #projects {
-    padding-top: 39px;
-    padding-bottom: 42px;
+  padding-top: 39px;
+  padding-bottom: 42px;
 }
 
 #projects figure img {
-    width: 100%;
-    margin-bottom: 6px;
+  width: 100%;
+  margin-bottom: 6px;
 }
 
-#projects figure figcaption h3 {
-    font-size: 24px;
-    line-height: 32px;
+#projects figcaption h3 {
+  font-size: 24px;
+  line-height: 32px;
 }
 
-#projects figure figcaption .counter {
-    line-height: 32px;
-    text-align: right;
+#projects figcaption .counter {
+  line-height: 32px;
+  text-align: right;
 }
 
-#projects figure figcaption .meta {
-    margin-top: 7px;
+#projects figcaption .meta {
+  margin-top: 7px;
 }
 
 #reviews .wrapper {
-    border-top: 1px solid #a6a5a1;
-    padding-top: 21px;
-    padding-bottom: 96px;
+  border-top: 1px solid #a6a5a1;
+  padding-top: 21px;
+  padding-bottom: 96px;
 }
 
 #reviews .wrapper h2 {
-    margin-bottom: 57px;
+  margin-bottom: 57px;
 }
 
 #reviews .wrapper img {
-    width: 100%;
-    border-radius: 50%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 #reviews .wrapper h3 {
-    font-weight: 700;
-    line-height: 32px;
-    margin-bottom: 8px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 8px;
 }
 
 #contacts .wrapper {
-    border-top: 1px solid #a6a5a1;
-    padding-top: 37px;
-    padding-bottom: 127px;
+  border-top: 1px solid #a6a5a1;
+  padding-top: 37px;
+  padding-bottom: 127px;
 }
 
 #contacts .wrapper h2 {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 #contacts .wrapper .contacts p {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 32px;
 }
 
 #contacts .wrapper .contacts p a {
-    color: #d7443e;
-    text-decoration: none;
+  color: #d7443e;
+  text-decoration: none;
 }
 
 #contacts .wrapper .contacts ul li {
-    display: inline-block;
-    margin-right: 48px;
+  display: inline-block;
+  margin-right: 48px;
 }
 
 #contacts .wrapper .feedback form label {
-    display: block;
-    line-height: 32px;
-    margin-bottom: 3px;
+  display: block;
+  line-height: 32px;
+  margin-bottom: 3px;
 }
 
 #contacts .wrapper .feedback form input,
 #contacts .wrapper .feedback form textarea {
-    width: 100%;
-    font-size: inherit;
-    padding: 0 7px 0 7px;
+  width: 100%;
+  font-size: inherit;
+  padding: 0 7px 0 7px;
 }
 
 #contacts .wrapper .feedback form input {
-    height: 32px;
-    margin-bottom: 13px;
-
+  height: 32px;
+  margin-bottom: 13px;
 }
 
 #contacts .wrapper .feedback form textarea {
-    resize: none;
-    margin-bottom: 32px;
+  resize: none;
+  margin-bottom: 32px;
 }
 
 #contacts .wrapper .feedback form button {
-    color: #ffffff;
-    background-color: #333a42;
-    border: 1px solid #333a42;
-    height: 32px;
-    font-size: inherit;
-    padding: 0 25px 0 25px;
+  color: #ffffff;
+  background-color: #333a42;
+  border: 1px solid #333a42;
+  height: 32px;
+  font-size: inherit;
+  padding: 0 25px 0 25px;
 }
 
 #contacts .wrapper .feedback .submit {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 #contacts .wrapper .feedback .submit:disabled {
-    background-color: #B22222;
+  background-color: #B22222;
 }
 
 #contacts .wrapper .feedback .submit-success {
-    color: green;
+  color: green;
 }
 
 #contacts .wrapper .feedback .submit-error {
-    color: red;
+  color: red;
 }
 
 footer {
-    padding: 15px 0 15px 0;
-    background-color: #333a42;
-    color: #ffffff;
-    text-align: center;
+  padding: 15px 0 15px 0;
+  background-color: #333a42;
+  color: #ffffff;
+  text-align: center;
 }
+/*# sourceMappingURL=styles.css.map */
