@@ -89,7 +89,7 @@ header {
 
 #projects {
     padding-top: 39px;
-    padding-bottom: 42px;
+    padding-bottom: 47px;
 
     @media (max-width: $breakpoint-sm) {
         padding-top: 16px;
@@ -154,8 +154,6 @@ header {
         padding-bottom: 30px;
     }
 
-
-
     h2 {
         margin-bottom: 57px;
 
@@ -195,8 +193,17 @@ header {
     padding-top: 37px;
     padding-bottom: 127px;
 
+    @media (max-width: $breakpoint-sm) {
+        padding-top: 14px;
+        padding-bottom: 47px;
+    }
+
     h2 {
         margin-bottom: 32px;
+
+        @media (max-width: $breakpoint-sm) {
+            margin-bottom: 16px;
+        }
     }
 
     .contacts {
@@ -206,6 +213,12 @@ header {
             line-height: 32px;
             margin-bottom: 32px;
 
+            @media (max-width: $breakpoint-sm) {
+                font-size: 14px;
+                line-height: 16px;
+                margin-bottom: 24px;
+            }
+
             a {
                 color: #d7443e;
                 text-decoration: none;
@@ -213,9 +226,17 @@ header {
         }
 
         ul {
+            @media (max-width: $breakpoint-sm) {
+                margin-bottom: 24px;
+            }
+
             li {
                 display: inline-block;
                 margin-right: 48px;
+
+                @media (max-width: $breakpoint-sm) {
+                    margin-right: 24px;
+                }
             }
         }
     }
@@ -226,6 +247,12 @@ header {
                 display: block;
                 line-height: 32px;
                 margin-bottom: 3px;
+
+                @media (max-width: $breakpoint-sm) {
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-bottom: 4px;
+                }
             }
 
             input,
@@ -238,11 +265,20 @@ header {
             input {
                 height: 32px;
                 margin-bottom: 13px;
+
+                @media (max-width: $breakpoint-sm) {
+                    height: 16px;
+                    margin-bottom: 8px;
+                }
             }
 
             textarea {
                 resize: none;
                 margin-bottom: 32px;
+
+                @media (max-width: $breakpoint-sm) {
+                    margin-bottom: 16px;
+                }
             }
 
             button {
@@ -252,11 +288,21 @@ header {
                 height: 32px;
                 font-size: inherit;
                 padding: 0 25px 0 25px;
+
+                @media (max-width: $breakpoint-sm) {
+                    font-size: 14px;
+                    height: 25px;
+                    margin-bottom: 4px;
+                }
             }
         }
 
         .submit {
             margin-top: 15px;
+
+            @media (max-width: $breakpoint-sm) {
+                margin-top: 0px;
+            }
 
             &:disabled {
                 background-color: #B22222;
@@ -265,10 +311,20 @@ header {
 
         .submit-success {
             color: green;
+
+            @media (max-width: $breakpoint-sm) {
+                font-size: 14px;
+                line-height: 16px;
+            }
         }
 
         .submit-error {
             color: red;
+
+            @media (max-width: $breakpoint-sm) {
+                font-size: 14px;
+                line-height: 16px;
+            }
         }
     }
 }
@@ -278,4 +334,9 @@ footer {
     background-color: #333a42;
     color: #ffffff;
     text-align: center;
+
+    @media (max-width: $breakpoint-sm) {
+        font-size: 10px;
+        line-height: 12px;
+    }
 }

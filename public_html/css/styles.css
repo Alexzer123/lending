@@ -90,7 +90,7 @@ header nav ul li a {
 
 #projects {
   padding-top: 39px;
-  padding-bottom: 42px;
+  padding-bottom: 47px;
 }
 
 @media (max-width: 576px) {
@@ -207,8 +207,21 @@ header nav ul li a {
   padding-bottom: 127px;
 }
 
+@media (max-width: 576px) {
+  #contacts .wrapper {
+    padding-top: 14px;
+    padding-bottom: 47px;
+  }
+}
+
 #contacts .wrapper h2 {
   margin-bottom: 32px;
+}
+
+@media (max-width: 576px) {
+  #contacts .wrapper h2 {
+    margin-bottom: 16px;
+  }
 }
 
 #contacts .wrapper .contacts p {
@@ -218,9 +231,23 @@ header nav ul li a {
   margin-bottom: 32px;
 }
 
+@media (max-width: 576px) {
+  #contacts .wrapper .contacts p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 24px;
+  }
+}
+
 #contacts .wrapper .contacts p a {
   color: #d7443e;
   text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  #contacts .wrapper .contacts ul {
+    margin-bottom: 24px;
+  }
 }
 
 #contacts .wrapper .contacts ul li {
@@ -228,10 +255,24 @@ header nav ul li a {
   margin-right: 48px;
 }
 
+@media (max-width: 576px) {
+  #contacts .wrapper .contacts ul li {
+    margin-right: 24px;
+  }
+}
+
 #contacts .wrapper .feedback form label {
   display: block;
   line-height: 32px;
   margin-bottom: 3px;
+}
+
+@media (max-width: 576px) {
+  #contacts .wrapper .feedback form label {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 4px;
+  }
 }
 
 #contacts .wrapper .feedback form input,
@@ -246,9 +287,22 @@ header nav ul li a {
   margin-bottom: 13px;
 }
 
+@media (max-width: 576px) {
+  #contacts .wrapper .feedback form input {
+    height: 16px;
+    margin-bottom: 8px;
+  }
+}
+
 #contacts .wrapper .feedback form textarea {
   resize: none;
   margin-bottom: 32px;
+}
+
+@media (max-width: 576px) {
+  #contacts .wrapper .feedback form textarea {
+    margin-bottom: 16px;
+  }
 }
 
 #contacts .wrapper .feedback form button {
@@ -260,8 +314,22 @@ header nav ul li a {
   padding: 0 25px 0 25px;
 }
 
+@media (max-width: 576px) {
+  #contacts .wrapper .feedback form button {
+    font-size: 14px;
+    height: 25px;
+    margin-bottom: 4px;
+  }
+}
+
 #contacts .wrapper .feedback .submit {
   margin-top: 15px;
+}
+
+@media (max-width: 576px) {
+  #contacts .wrapper .feedback .submit {
+    margin-top: 0px;
+  }
 }
 
 #contacts .wrapper .feedback .submit:disabled {
@@ -272,8 +340,22 @@ header nav ul li a {
   color: green;
 }
 
+@media (max-width: 576px) {
+  #contacts .wrapper .feedback .submit-success {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 #contacts .wrapper .feedback .submit-error {
   color: red;
+}
+
+@media (max-width: 576px) {
+  #contacts .wrapper .feedback .submit-error {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 footer {
@@ -281,5 +363,12 @@ footer {
   background-color: #333a42;
   color: #ffffff;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  footer {
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
