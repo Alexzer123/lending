@@ -93,23 +93,62 @@ header nav ul li a {
   padding-bottom: 42px;
 }
 
+@media (max-width: 576px) {
+  #projects {
+    padding-top: 16px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  #projects figure {
+    margin-top: 33px;
+  }
+}
+
 #projects figure img {
   width: 100%;
   margin-bottom: 6px;
 }
 
-#projects figcaption h3 {
+#projects figure figcaption h3 {
+  font-weight: 700;
   font-size: 24px;
   line-height: 32px;
 }
 
-#projects figcaption .counter {
+@media (max-width: 576px) {
+  #projects figure figcaption h3 {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+  }
+}
+
+#projects figure figcaption .counter {
   line-height: 32px;
   text-align: right;
 }
 
-#projects figcaption .meta {
+@media (max-width: 576px) {
+  #projects figure figcaption .counter {
+    font-size: 10px;
+    line-height: 16px;
+    margin-top: 16px;
+  }
+}
+
+#projects figure figcaption .meta {
   margin-top: 7px;
+}
+
+@media (max-width: 576px) {
+  #projects figure figcaption .meta {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 5px;
+  }
 }
 
 #reviews .wrapper {
@@ -118,8 +157,21 @@ header nav ul li a {
   padding-bottom: 96px;
 }
 
+@media (max-width: 576px) {
+  #reviews .wrapper {
+    padding-top: 16px;
+    padding-bottom: 30px;
+  }
+}
+
 #reviews .wrapper h2 {
   margin-bottom: 57px;
+}
+
+@media (max-width: 576px) {
+  #reviews .wrapper h2 {
+    margin-bottom: 32px;
+  }
 }
 
 #reviews .wrapper img {
@@ -131,6 +183,22 @@ header nav ul li a {
   font-weight: 700;
   line-height: 32px;
   margin-bottom: 8px;
+}
+
+@media (max-width: 576px) {
+  #reviews .wrapper h3 {
+    line-height: 12px;
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 576px) {
+  #reviews .wrapper p {
+    font-size: 10px;
+    line-height: 12px;
+    padding-bottom: 24px;
+  }
 }
 
 #contacts .wrapper {

@@ -67,9 +67,11 @@ header {
         padding-bottom: 32px;
     }
 
-    figure img {
-        width: 100%;
-        border-radius: 50%;
+    figure {
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
     }
 
     p {
@@ -83,31 +85,62 @@ header {
             margin-top: 16px;
         }
     }
-
-
 }
 
 #projects {
     padding-top: 39px;
     padding-bottom: 42px;
 
-    figure img {
-        width: 100%;
-        margin-bottom: 6px;
+    @media (max-width: $breakpoint-sm) {
+        padding-top: 16px;
+        padding-bottom: 30px;
     }
 
-    figcaption h3 {
-        font-size: 24px;
-        line-height: 32px;
-    }
+    figure {
+        @media (max-width: $breakpoint-sm) {
+            margin-top: 33px;
+        }
 
-    figcaption .counter {
-        line-height: 32px;
-        text-align: right;
-    }
+        img {
+            width: 100%;
+            margin-bottom: 6px;
+        }
 
-    figcaption .meta {
-        margin-top: 7px;
+        figcaption {
+            h3 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+
+                @media (max-width: $breakpoint-sm) {
+                    font-size: 14px;
+                    line-height: 16px;
+                    font-weight: 500;
+                    margin-top: 16px;
+                }
+            }
+
+            .counter {
+                line-height: 32px;
+                text-align: right;
+
+                @media (max-width: $breakpoint-sm) {
+                    font-size: 10px;
+                    line-height: 16px;
+                    margin-top: 16px;
+                }
+            }
+
+            .meta {
+                margin-top: 7px;
+
+                @media (max-width: $breakpoint-sm) {
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-top: 5px;
+                }
+            }
+        }
     }
 }
 
@@ -116,8 +149,19 @@ header {
     padding-top: 21px;
     padding-bottom: 96px;
 
+    @media (max-width: $breakpoint-sm) {
+        padding-top: 16px;
+        padding-bottom: 30px;
+    }
+
+
+
     h2 {
         margin-bottom: 57px;
+
+        @media (max-width: $breakpoint-sm) {
+            margin-bottom: 32px;
+        }
     }
 
     img {
@@ -129,6 +173,20 @@ header {
         font-weight: 700;
         line-height: 32px;
         margin-bottom: 8px;
+
+        @media (max-width: $breakpoint-sm) {
+            line-height: 12px;
+            font-size: 10px;
+            margin-bottom: 4px;
+        }
+    }
+
+    p {
+        @media (max-width: $breakpoint-sm) {
+            font-size: 10px;
+            line-height: 12px;
+            padding-bottom: 24px;
+        }
     }
 }
 
@@ -155,15 +213,12 @@ header {
         }
 
         ul {
-
             li {
                 display: inline-block;
                 margin-right: 48px;
             }
         }
     }
-
-
 
     .feedback {
         form {
@@ -198,7 +253,6 @@ header {
                 font-size: inherit;
                 padding: 0 25px 0 25px;
             }
-
         }
 
         .submit {
