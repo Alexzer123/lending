@@ -12,17 +12,46 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
 <body>
+    <div class="mobile-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <ul>
+                        <li>
+                            <a href="#about">Обо мне</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Проекты</a>
+                        </li>
+                        <li>
+                            <a href="#reviews">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </div><!-- /.col -->
+
+                <div class="col-2 offset-1">
+                    <span aria-hidden="true" class="mobile-nav-close">&times;</span>
+                </div><!-- /.col -->
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-9 col-sm-3">
                     <h1>Александр Хорчев</h1>
                 </div><!-- /.col -->
-                <div class="col-8 offset-1">
+
+                <div class="col-2 offset-1 col-sm-8 offset-sm-1">
+                    <a href="#" class="menu-button">
+                        <img src="img/header/menu-button.svg" alt="menu-button.svg">
+                    </a>
                     <nav>
                         <ul>
                             <li>
@@ -47,12 +76,12 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-6 offset-3 col-sm-3 offset-sm-0">
                     <figure>
                         <img src="img/about/photo.jpg" alt="Александр Хорчев &mdash; веб-разработчик">
                     </figure>
                 </div>
-                <div class="col-8 offset-1">
+                <div class="col-12 col-sm-8 offset-sm-1">
                     <p>
                         Доброго времени суток, меня зовут Александр. Занимаюсь разработкой сайтов с нуля, под ключ.
                         Специалист по CMS WordPress, OpenCart, Elgg. Выполняю верстку и программирование сайтов. Делаю
@@ -66,20 +95,19 @@
     <section id="projects">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 col-sm-4">
                     <h2>Проекты</h2>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-sm-8">
                     <div class="projects-slider">
-
                         <figure>
                             <img src="img/projects/Chat.jpg" alt="Программа виртуального общения по локальной сети">
                             <figcaption>
                                 <div class="row">
-                                    <div class="col-9">
+                                    <div class="col-9 col-sm-9">
                                         <h3>Программа виртуального общения по локальной сети</h3>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-3 col-sm-3">
                                         <div class="counter">1/10</div>
                                     </div>
                                 </div><!-- /.row -->
@@ -107,7 +135,6 @@
                                 <!-- /.meta -->
                             </figcaption>
                         </figure>
-
                     </div><!-- /.projects-slider -->
                 </div>
             </div><!-- /.row -->
@@ -120,73 +147,78 @@
                 <h2>Отзывы</h2>
 
                 <div class="reviews-slider">
-
-                    <div class="row">
-                        <div class="col-4">
-                            <figure>
-                                <img src="img/reviews/1.jpg" alt="Максим, Санкт-Петербург">
-                            </figure>
-                        </div>
-                        <div class="col-8">
-                            <h3>Максим, Санкт-Петербург</h3>
-                            <p>Mollit cillum sit eu excepteur commodo culpa in esse sit magna esse non et commodo.
-                                Ut reprehenderit cillum proident excepteur id occaecat reprehenderit cupidatat. Ad
-                                consequat aliquip labore qui. Proident aliquip ipsum ullamco sint est et. Elit
-                                eiusmod fugiat mollit mollit fugiat non duis. Eiusmod laborum officia exercitation
-                                id irure ex cupidatat tempor aliquip nulla et eu aute.</p>
-                        </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-4 col-sm-4">
+                                <figure>
+                                    <img src="img/reviews/1.jpg" alt="Максим, Санкт-Петербург">
+                                </figure>
+                            </div>
+                            <div class="col-8 col-sm-8">
+                                <h3>Максим, Санкт-Петербург</h3>
+                                <p>Mollit cillum sit eu excepteur commodo culpa in esse sit magna esse non et commodo.
+                                    Ut reprehenderit cillum proident excepteur id occaecat reprehenderit cupidatat. Ad
+                                    consequat aliquip labore qui. Proident aliquip ipsum ullamco sint est et. Elit
+                                    eiusmod fugiat mollit mollit fugiat non duis. Eiusmod laborum officia exercitation
+                                    id irure ex cupidatat tempor aliquip nulla et eu aute.</p>
+                            </div>
+                        </div><!-- /.row -->
                     </div>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <figure>
-                                <img src="img/reviews/2.jpg" alt="Глебан, Душанбе">
-                            </figure>
-                        </div>
-                        <div class="col-8">
-                            <h3>Глебан, Душанбе</h3>
-                            <p>Aliquip esse dolore ullamco laborum dolor ex aliquip velit. Fugiat ut cupidatat ut
-                                fugiat in sit officia minim laboris dolore. Cupidatat est Lorem ea qui anim
-                                occaecat
-                                veniam consequat laborum Lorem sunt anim nisi ullamco. Nulla consectetur sint
-                                reprehenderit sint eiusmod dolor aliqua deserunt.</p>
-                        </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-4 col-sm-4">
+                                <figure>
+                                    <img src="img/reviews/2.jpg" alt="Глебан, Душанбе">
+                                </figure>
+                            </div>
+                            <div class="col-8 col-sm-8">
+                                <h3>Глебан, Душанбе</h3>
+                                <p>Aliquip esse dolore ullamco laborum dolor ex aliquip velit. Fugiat ut cupidatat ut
+                                    fugiat in sit officia minim laboris dolore. Cupidatat est Lorem ea qui anim
+                                    occaecat
+                                    veniam consequat laborum Lorem sunt anim nisi ullamco. Nulla consectetur sint
+                                    reprehenderit sint eiusmod dolor aliqua deserunt.</p>
+                            </div>
+                        </div><!-- /.row -->
                     </div>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <figure>
-                                <img src="img/reviews/3.jpg" alt="Блейз Шарп, Карибы">
-                            </figure>
-                        </div>
-                        <div class="col-8">
-                            <h3>Блейз Шарп, Карибы</h3>
-                            <p>Aliquip esse dolore ullamco laborum dolor ex aliquip velit. Fugiat ut cupidatat ut
-                                fugiat in sit officia minim laboris dolore. Cupidatat est Lorem ea qui anim
-                                occaecat
-                                veniam consequat laborum Lorem sunt anim nisi ullamco. Nulla consectetur sint
-                                reprehenderit sint eiusmod dolor aliqua deserunt.</p>
-                        </div>
-                    </div><!-- /.row -->
+                    <div>
+                        <div class="row">
+                            <div class="col-4 col-sm-4">
+                                <figure>
+                                    <img src="img/reviews/3.jpg" alt="Блейз Шарп, Карибы">
+                                </figure>
+                            </div>
+                            <div class="col-8 col-sm-8">
+                                <h3>Блейз Шарп, Карибы</h3>
+                                <p>Aliquip esse dolore ullamco laborum dolor ex aliquip velit. Fugiat ut cupidatat ut
+                                    fugiat in sit officia minim laboris dolore. Cupidatat est Lorem ea qui anim
+                                    occaecat
+                                    veniam consequat laborum Lorem sunt anim nisi ullamco. Nulla consectetur sint
+                                    reprehenderit sint eiusmod dolor aliqua deserunt.</p>
+                            </div>
+                        </div><!-- /.row -->
+                    </div>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <figure>
-                                <img src="img/reviews/3.jpg" alt="Блейз Шарп, Карибы">
-                            </figure>
-                        </div>
-                        <div class="col-8">
-                            <h3>Блейз Шарп, Карибы</h3>
-                            <p>Aliquip esse dolore ullamco laborum dolor ex aliquip velit. Fugiat ut cupidatat ut
-                                fugiat in sit officia minim laboris dolore. Cupidatat est Lorem ea qui anim
-                                occaecat
-                                veniam consequat laborum Lorem sunt anim nisi ullamco. Nulla consectetur sint
-                                reprehenderit sint eiusmod dolor aliqua deserunt.</p>
-                        </div>
-                    </div><!-- /.row -->
-
+                    <div>
+                        <div class="row">
+                            <div class="col-4 col-sm-4">
+                                <figure>
+                                    <img src="img/reviews/3.jpg" alt="Блейз Шарп, Карибы">
+                                </figure>
+                            </div>
+                            <div class="col-8 col-sm-8">
+                                <h3>Блейз Шарп, Карибы</h3>
+                                <p>Aliquip esse dolore ullamco laborum dolor ex aliquip velit. Fugiat ut cupidatat ut
+                                    fugiat in sit officia minim laboris dolore. Cupidatat est Lorem ea qui anim
+                                    occaecat
+                                    veniam consequat laborum Lorem sunt anim nisi ullamco. Nulla consectetur sint
+                                    reprehenderit sint eiusmod dolor aliqua deserunt.</p>
+                            </div>
+                        </div><!-- /.row -->
+                    </div>
                 </div><!-- /.reviews-slider -->
-
             </div><!-- wrapper -->
         </div><!-- container -->
     </section><!-- /#reviews -->
@@ -195,7 +227,7 @@
         <div class="container">
             <div class="wrapper">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <h2>Контакты</h2>
 
                         <div class="contacts">
@@ -203,6 +235,7 @@
                                 Я сейчас нахожуся в в Тайланде. У меня сейчас 22:04. Здесь все кто по кайфу, ингуши,
                                 кабардинцы.
                             </p>
+
                             <p>
                                 Быстрее всего отвечу <a href="mailto:">по почте</a>.
                             </p>
@@ -224,13 +257,13 @@
                                     </a>
                                 </li>
                             </ul>
-
                         </div><!-- /.contacts -->
                     </div><!-- /.col-6 -->
 
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="feedback">
                             <h2>Обратная связь</h2>
+
                             <form method="POST" action="server.php">
                                 <div class="row">
                                     <div class="col-6">
@@ -252,12 +285,9 @@
 
                             <div class="submit submit-error" style="display: none;">Ошибка отправки сообщеня.
                                 Пожалуйста, свяжитесь со мной по email.</div>
-
                         </div>
-
                     </div><!-- /.col-6 -->
                 </div><!-- /.row -->
-
             </div><!-- wrapper -->
         </div><!-- /.container -->
     </section><!-- /.contacts -->
@@ -266,66 +296,9 @@
         Александр Хорчев &copy; 2018
     </footer>
 
-
     <script src="js/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            //слайдеры
-            $('.projects-slider').slick({
-                autoplay: true,
-                dots: true
-            });
-            $('.reviews-slider').slick({
-                slidesPerRow: 2,
-                slidesToShow: 2,
-                arrows: false,
-                dots: true,
-            });
-            
-            //показ сообщения об успехе/ошибки
-            function displayResult(selector) {
-                $(selector).show('slow');
-                setTimeout(function () {
-                    $(selector).hide('slow');
-                }, 10000);
-            }
-
-            //отправка формы
-            $(".feedback form").on('submit', function (event) {
-                //обратите внимание на то что в теле обработчика мы вырубаем штатный обработчик события submit (который гавесил сам браузер по дефолты)
-                event.preventDefault();
-
-                //2 получаем данные введеные в форму
-                let data = {
-                    name: $("#name").val(),
-                    email: $("#email").val(),
-                    text: $("#text").val()
-                }
-
-                $(".submit").prop("disabled", true);
-
-                //отправка данных на сервер и обработка результата
-                $.post('server.php', data, function (response) {
-                    if (response.result) {
-                        // console.log("success");
-                            displayResult(".submit.submit-success");
-                    } else {
-                        // console.log("error")
-                        displayResult(".submit.submit-error");
-                    }
-                    
-                    $(".submit").prop("disabled", false);
-                }, 'json');
-
-            });
-
-
-        });
-    </script>
-
+    <script type="text/javascript" src="js/scripts.js"> </script>
 </body>
 
 </html>
