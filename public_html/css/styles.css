@@ -282,6 +282,13 @@ header nav ul li a {
   padding: 0 7px 0 7px;
 }
 
+@media (max-width: 576px) {
+  #contacts .wrapper .feedback form input,
+  #contacts .wrapper .feedback form textarea {
+    font-size: 10px;
+  }
+}
+
 #contacts .wrapper .feedback form input {
   height: 32px;
   margin-bottom: 13px;

@@ -260,6 +260,10 @@ header {
                 width: 100%;
                 font-size: inherit;
                 padding: 0 7px 0 7px;
+
+                @media (max-width: $breakpoint-sm) {
+                    font-size: 10px;
+                }
             }
 
             input {
