@@ -1,15 +1,12 @@
 $(document).ready(function () {
 
     // мобильное меню
-    $('.menu-button').click(function () {
+    $('.menu-button').click(function (e) {
+        e.preventDefault();
         $('.mobile-nav').show();
     });
 
-    $('.mobile-nav a').click(function () {
-        $('.mobile-nav').hide();
-    });
-
-    $('.mobile-nav-close').click(function () {
+    $('.mobile-nav a, .mobile-nav-close').click(function () {
         $('.mobile-nav').hide();
     });
     // end
