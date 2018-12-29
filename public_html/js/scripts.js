@@ -1,5 +1,19 @@
 $(document).ready(function () {
 
+    // мобильное меню
+    $('.menu-button').click(function () {
+        $('.mobile-nav').show();
+    });
+
+    $('.mobile-nav a').click(function () {
+        $('.mobile-nav').hide();
+    });
+
+    $('.mobile-nav-close').click(function () {
+        $('.mobile-nav').hide();
+    });
+    // end
+
     //слайдеры
     $('.projects-slider').slick({
         autoplay: true,
@@ -24,6 +38,7 @@ $(document).ready(function () {
             }
         }]
     });
+    //end
 
     //показ сообщения об успехе/ошибки
     function displayResult(selector, time) {
@@ -32,6 +47,7 @@ $(document).ready(function () {
             $(selector).hide('slow');
         }, time);
     }
+    // end
 
     //отправка формы
     $(".feedback form").on('submit', function (event) {
@@ -55,8 +71,9 @@ $(document).ready(function () {
                 // console.log("error")
                 displayResult(".submit.submit-error", 10000);
             }
-            
+
             $(".submit").prop("disabled", false);
         }, 'json');
     });
+    // end
 });

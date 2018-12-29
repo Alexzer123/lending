@@ -22,11 +22,46 @@ h2 {
   }
 }
 
+/* Мобильное меню */
+.mobile-nav {
+  padding-top: 17px;
+  background-color: #f1ece9;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+
+.mobile-nav ul li {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 17px;
+}
+
+.mobile-nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mobile-nav .mobile-nav-close {
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 32px;
+  display: block;
+}
+
 /* Стили разделов */
 header {
   background-color: #333a42;
   color: #ffffff;
   padding-top: 39px;
+}
+
+@media (max-width: 576px) {
+  header {
+    padding-top: 17px;
+  }
 }
 
 header .menu-button {
